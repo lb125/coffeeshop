@@ -9,6 +9,6 @@ menu.html:
   mock menu form. Users can add items to their order and see the total price. They can then submit and get confirmation of the total price to pay on arrival
   
 contact.html
-  allows users to submit any message along with their name and email. Connects to cloudmersive api to validate and parse names
+  allows users to submit any message along with their name and email. Connects to cloudmersive api to validate and parse names. Uses Jquery to assist with this. Relevant js script created with aid of cloudmersive documentation
   
 All images are taken from google images and do not belong to me!!
