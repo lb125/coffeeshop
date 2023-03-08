@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.menu-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.menu-item {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 5px;
+			max-width: 400px;
+		}
+
+		.menu-item img {
+			margin-right: 10px;
+			height: 50px;
+			width: 50px;
+		}
+
+		.menu-item p {
+			margin: 0;
+			flex-grow: 1;
+		}
+
+		.order-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		.order-summary {
+			margin-top: 20px;
+			border: 1px solid black;
+			border-radius: 5px;
+			padding: 10px;
+			max-width: 400px;
+		}
+
+		.order-summary h2 {
+			margin-top: 0;
+		}
+
+		.order-summary ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.order-summary li {
+			display: flex;
+			justify-content: space-between;
+			margin: 5px 0;
+		}
+
+		.order-summary p {
+			margin: 10px 0 0;
+			text-align: right;
+		}
+	</style>
+</head>
+<body><header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<mai<div class="container">
+    <h1>Enjoy our Menu!</h1>
+	<div class="menu-container">
+		<div class="menu-item">
+			<img src="images/singleespresso.jpg" alt="Single Espresso">
+			<p>Single Espresso - $3.00</p>
+		</div>
+		<div class="menu-item">
+			<img src="images/doubleespresso.jpg" alt="Double Espresso">
+			<p>Double Espresso - $4.50</p>
+		</div>
+		<div class="menu-item">
+			<img src="images/cappuccino.webp" alt="Cappuccino">
+			<p>Cappuccino - $4.50</p>
+		</div>
+		<div class="menu-item">
+			<img src="images/americano.webp" alt="Americano">
+			<p>Americano - $4.50</p>
+		</div>
+		<div class="menu-item">
+			<img src="images/hotchoco.jpg" alt="Hot Chocolate">
+			<p>Hot Chocolate - $3.00</p>
+		</div>
+    <p>Please select an item from the dropdown menu:</p>
+    <select id="menuDropdown">
+        <option value="item1">Single Espresso</option>
+        <option value="item2">Double Espresso</option>
+        <option value="item3">Cappuccino</option>
+        <option value="item4">Americano</option>
+        <option value="item5">Hot Chocolate</option>
+    </select>
+    <button onclick="addItem()">Add Item to Order</button>
+    
+    <div id="orderItems">
+        <h2>Order Summary</h2>
+        <ul id="orderList"></ul>
+        <p>Total Price: $<span id="totalPrice">0.00</span></p>
+    </div>
+    
+    <button onclick="submitOrder()">Submit Order</button>
+</div>
+
+</main>
+<footer>
+	<p>&copy; 2023 Logan's Coffee Shop</p>
+</footer>
+</body>
+</html>
+
